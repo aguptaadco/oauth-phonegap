@@ -286,7 +286,7 @@ module.exports = function(Materia) {
           wnd.close();
         } catch (_error) {}
       }, 1200 * 1000);
-      wnd = window.open(url, "_self", 'toolbar=yes,location=no,closebuttoncaption=Back,presentationstyle=formsheet,toolbarposition=top,clearsessioncache=yes,clearcache=yes,allowinlinemediaplayback=YES');
+      wnd = window.open(url, "_self", 'toolbar=yes,closebuttoncaption=Back,presentationstyle=formsheet,toolbarposition=top,clearsessioncache=yes,clearcache=yes,allowinlinemediaplayback=YES');
       wnd.addEventListener("loadstart", function(ev) {
         var results;
         if (ev.url.substr(0, 17) !== "http://localhost/") {
