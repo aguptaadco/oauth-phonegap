@@ -286,7 +286,7 @@ module.exports = function(Materia) {
           wnd.close();
         } catch (_error) {}
       }, 1200 * 1000);
-      wnd = window.open(url, "_blank", 'allowinlinemediaplayback=Yes,allowinlinemediaplayback=YES,allowinlinemediaplayback=yes,toolbar=yes,closebuttoncaption=Back,presentationstyle=formsheet,toolbarposition=top,clearsessioncache=no,clearcache=yes');
+      wnd = window.open(url, "_blank", 'mediaPlaybackRequiresUserAction=no,allowinlinemediaplayback=Yes,allowinlinemediaplayback=YES,allowinlinemediaplayback=yes,toolbar=yes,closebuttoncaption=Back,presentationstyle=formsheet,toolbarposition=top,clearsessioncache=no,clearcache=yes');
       wnd.addEventListener("loadstart", function(ev) {
         var results;
         if (ev.url.substr(0, 17) !== "http://localhost/") {
